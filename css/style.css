@@ -1,0 +1,38 @@
+body{
+    background: url(bg.gif);
+    font-family: Verdana,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+table{
+    margin: 30px auto;
+}
+td{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    background: white;
+    opacity: 0.8;
+}
+td.live{
+    background: gray;
+}
+.container{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 20px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+.game__buttons{
+    margin: 20px auto;
+    text-align: center;
+}
+.rules ul{
+    margin-top: 20px
+}
+.rules li{
+    line-height: 28px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tash</title>        
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/jquery-ui-1.10.2.custom.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <section class="span4 rules">
+                    <h2>Правила игры «Жизнь»</h2>
+                        <ul>
+                            <li>«Жизнь» разыгрывается на бесконечном клеточном поле</li>
+                            <li>У каждой клетки 8 соседних клеток</li>
+                            <li>В каждой клетке может жить существо</li>
+                            <li>Существо с двумя или тремя соседями выживает в следующем поколении, иначе погибает от одиночества или перенаселённости</li>
+                            <li>В пустой клетке с тремя соседями в следующем поколении рождается существо</li>
+                            <li>Игра прекращается, если на поле не останется ни одной «живой» клетки или если при очередном шаге ни одна из клеток не меняет своего состояния</li>
+                        </ul>
+                </section>
+                <section class="span6 game">
+                    <div class="game__buttons" >
+                        <div class="btn" id="Play">Play</div>
+                        <div class="btn" id="Pause">Pause</div>
+                        <div class="btn" id="Reset">Reset</div>
+                    </div>                    
+                    <table id="Life"></table>
+                    <div id="dialog-message" title="Игра окончена">
+                        <p></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script src="js/jquery-1.6.1.min.js"></script>      
+        <script src="js/jquery-ui-1.10.2.custom.js"></script>
+        <script src="js/life.js"></script>
+    </body>
+</html>
